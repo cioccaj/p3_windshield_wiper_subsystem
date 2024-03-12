@@ -30,12 +30,20 @@ All of these modules are then tied in to work together in the main.cpp file.
 ## **Testing Results:**
 ### **Ignition Subsystem**
 
-| Test                | Pass/Fail           | Comment             |
-|:-------------------:|:-------------------:|:-------------------:|
-| Start the engine (i.e., light the blue LED) while the driver’s seat is occupied and when the ignition button is pushed and then released | Pass | Passed |
+| Test                | Pass/Fail           |
+|:-------------------:|:-------------------:|
+| Start the engine (i.e., light the blue LED) while the driver’s seat is occupied and when the ignition button is pushed and then released. | Pass |
+| Engine still runs even if the driver should exit the vehicle. | Pass |
+| While engine is running, engine stops when the ignition button is pressed and then released. | Pass |
+
 
 
 ### **Windshield Wiper Subsystem**
-| Test                | Pass/Fail           | Comment             |
-|:-------------------:|:-------------------:|:-------------------:|
-|Engine running, and the user selects HI, LO, INT, or OFF, the wipers run the appropriate mode| Pass | Comment |
+| Test                | Pass/Fail           |
+|:-------------------:|:-------------------:|
+|Engine running, and the user selects HI, LO, INT, or OFF, the wipers run the appropriate mode| Pass |
+| When in INT mode, the wiper rotates accordingly to the delay setting. | Pass |
+| LCD shows both the wiper mode and the delay setting. | Pass |
+| When wiper mode selector is turned to off or engine is turned off, the wipers freeze in position | Pass |
+| Once ignition is turned back on, the wiper returns to 0 degrees. | Pass |
+
